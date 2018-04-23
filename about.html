@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-<meta charset="utf-8">
-<title>O mnie</title>
-<meta name="description" content="Opis strony, wyświetlany np. w wyszukiwarkach">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="shortcut icon" href="favicon.png">
-<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<title>O mnie</title>
+	<meta name="description" content="Opis strony, wyświetlany np. w wyszukiwarkach">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
 		<h1>Tytuł waszej strony</h1>
-		<nav>
+		<nav id="top-menu">
 			<ul>
 				<li><a href="index.html">Strona główna</a></li>
-				<li><a href="about.html">O mnie</a></li>
+				<li class="current"><a href="about.html">O mnie</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
+
+	<main class="row">
 		<h2>O mnie</h2>
 		<p>Tu wpisuje cokolwiek. Jak książka to wiedźmin, jak serial to Dolina Krzemowa, jak film to zbyt wiele żeby wymieniać.</p>
 		<p>Lorem ipsum dolor sit amet quam. Nunc tristique sodales. Phasellus a auctor est, dapibus non, lobortis convallis, dui non risus. Sed lobortis dapibus, libero a dolor. Nullam libero nunc, luctus et malesuada augue sit amet tempus dictum faucibus orci ac pede. Cras congue, lacus sed leo et interdum wisi eu lorem. Sed diam vel lectus. Pellentesque laoreet urna et posuere eget.</p>
 		<p>Phasellus facilisis urna mi, id leo sed felis augue odio sagittis urna. Proin in velit adipiscing wisi. Curabitur scelerisque iaculis. Pellentesque mattis id, sapien. Proin imperdiet sed, ullamcorper et, eros. Sed sit amet neque quis augue. Morbi ut nonummy eget, ante. Maecenas nisl at metus. Aenean congue sit amet turpis at sagittis vel, consequat eu, pulvinar nulla ornare pulvinar mollis, purus laoreet risus. Etiam lobortis condimentum nec, scelerisque porttitor risus. Suspendisse adipiscing. Nulla sed massa in enim. In pede. Sed euismod mi. Fusce tristique, urna risus sit amet neque magna orci ipsum.</p>
+	
+		<ul class="fav-list">
+			<li class="serial" id="best">Dolina Krzemowa</li>
+			<li class="serial">Stranger Things</li>
+			<li class="serial">Gra o Tron</li>
+			<li class="serial">House of Cards</li>
+			<li class="game" id="best">Far Cry 5</li>
+			<li class="game">Counter-Strike: Global Offensive</li>
+			<li class="game">Fortnite</li>
+			<li class="game">What Remains of Edith Finch</li>
+			<li class="book" id="best">Saga Wiedźmin</li>
+			<li class="book">Seria Harry Potter</li>
+		</ul>
 	</main>
+
 	<footer>
 		copyright &copy; 2018
 	</footer>
