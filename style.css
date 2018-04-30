@@ -10,6 +10,25 @@ body {
    font-size: 15px;
 }
 
+p {
+   padding-top: 1em;
+}
+
+p:first-child {
+   margin-top: 0;
+   padding-top: 0;
+}
+
+a {
+   text-decoration: none;
+   color: pink;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
 header {
    background: #fff;
    color: #000;
@@ -19,14 +38,76 @@ header {
    justify-content: space-between;
 }
 
-main {
-   padding: 2em 5%;
-}
-
 header ul li {
    list-style-type: none;
    display: inline-block;
    margin-left: 1em;
+}
+
+main {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 2em 5%;
+   min-height: calc(100vh - 4em - 74px);
+}
+
+#one-page main {
+   display: block;
+   padding: 0;
+}
+
+#one-page main section {
+   padding: 5rem 5%;
+}
+
+#one-page section h2 {
+   text-align: center;
+   margin-bottom: 1em;
+}
+
+#one-page {
+	padding-top: 74px;
+}
+
+#one-page header {
+	width: 100%;
+	position: fixed;
+   top: 0;
+   box-shadow: 0 6px 6px -4px rgba(0,0,0,0.2);
+}
+
+.red .content {
+   column-count: 3;
+   column-gap: 2rem;
+   max-width: unset;
+}
+
+section .content {
+   max-width: 750px;
+   margin: 0 auto;
+}
+
+#content {
+   background: #fff;
+   flex-grow: 1;
+   flex-shrink: 0;
+   flex-basis: 70%
+}
+
+aside {
+   background: #eee;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 30%;
+   min-width: calc(250px - 4rem);
+}
+
+#content, aside {
+   color: #222;
+}
+
+.column {
+   padding: 2rem;
 }
 
 footer {
@@ -34,15 +115,7 @@ footer {
    color: #000;
    padding: 20px;
    text-align: center;
-}
-
-p {
-   padding-top: 1em;
-}
-
-a {
-   text-decoration: none;
-   color: pink;
+   clear: both;
 }
 
 .row {
@@ -81,4 +154,53 @@ a {
 
 .book {
    color: #e64a19;
+}
+
+.alignleft {
+   float: left;
+   margin-right: 1em;
+   margin-bottom: 1em;
+}
+
+.alignright {
+   float: right;
+   margin-left: 1em;
+   margin-bottom: 1em;
+}
+
+.aligncenter {
+   display: block;
+   margin: 1em auto;
+}
+
+.small_img {
+   max-width: 80px;
+}
+
+.clearleft {
+   clear: left;
+}
+
+.clearright {
+   clear: right;
+}
+
+.clear {
+   clear: both;
+}
+
+.red {
+   background: #e53935;
+}
+
+.white {
+   background: #fff;
+}
+
+.blue {
+   background: #3949ab;
+}
+
+.green {
+   background: #388e3c;
 }
