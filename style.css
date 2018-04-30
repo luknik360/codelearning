@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700&subset=latin-ext');
+
 * {
    padding: 0;
    margin: 0;
@@ -8,6 +10,7 @@ body {
    background: #222;
    color: #eee;
    font-size: 15px;
+   font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -29,6 +32,10 @@ img {
    height: auto;
 }
 
+h1, h2 {
+   font-family: 'Oswald', sans-serif;
+}
+
 header {
    background: #fff;
    color: #000;
@@ -48,7 +55,7 @@ main {
    display: flex;
    flex-wrap: wrap;
    padding: 2em 5%;
-   min-height: calc(100vh - 4em - 74px);
+   min-height: calc(100vh - 4em - 85px);
 }
 
 #one-page main {
@@ -66,7 +73,7 @@ main {
 }
 
 #one-page {
-	padding-top: 74px;
+	padding-top: 85px;
 }
 
 #one-page header {
@@ -78,6 +85,12 @@ main {
 
 .red .content {
    column-count: 3;
+   column-gap: 2rem;
+   max-width: unset;
+}
+
+.column-2 {
+   column-count: 2;
    column-gap: 2rem;
    max-width: unset;
 }
