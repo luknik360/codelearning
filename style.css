@@ -103,8 +103,15 @@ header ul li:hover, .current {
 main {
    display: flex;
    flex-wrap: wrap;
+   flex-direction: row;
    padding: 2em 5%;
    min-height: calc(100vh - 4em - 85px);
+}
+
+@media only screen and (max-width: 768px) {
+   main {
+      flex-direction: column-reverse;
+   }
 }
 
 aside {
@@ -116,7 +123,7 @@ aside {
 }
 
 .block {
-   margin: 0.5rem 0.5rem 2rem 0.5rem;
+   margin: 0.5rem;
    background: #fff;
 }
 .block h2 {
@@ -126,7 +133,7 @@ aside {
 }
 
 section .content {
-   max-width: 750px;
+   max-width: 768px;
    margin: 0 auto;
 }
 
