@@ -14,8 +14,12 @@
 body {
    background: #1e1f26;
    color: #1e1f26;
-   font-size: 15px;
+   font-size: 16px;
    font-family: 'Lato', sans-serif;
+}
+
+ul, ol {
+   list-style-position: inside;
 }
 
 p {
@@ -49,7 +53,20 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
    font-family: 'Oswald', sans-serif;
+   padding-top: 0.5em;
 }
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+   padding-top: 0;
+}
+h1 {
+   font-size: 2em;
+}
+
 
 /* Header */
 header {
@@ -98,13 +115,12 @@ aside {
    min-width: calc(250px - 4rem);
 }
 
-.fav-block {
-   margin: 1rem;
+.block {
+   margin: 0.5rem 0.5rem 2rem 0.5rem;
    background: #fff;
 }
-.fav-block h2 {
+.block h2 {
    text-align: center;
-   background: #e53935;
    color: #fff;
    line-height: 50px;
 }
@@ -140,13 +156,9 @@ section .content {
 }
 
 .row {
-   max-width: 1200px;
+   max-width: 1280px;
    width: 90%;
    margin: 0 auto;
-}
-
-.fav-list li {
-   padding-top: 5px;
 }
 
 .small_img {
@@ -193,7 +205,7 @@ footer {
 .article_list_dark, .comments {
    background: #283655;
 }
-.article_list_dark h2, .comments h3 {
+.article_list_dark h1, .comments h3 {
    color: #d0e1f9;
 }
 .article_list_dark p, .comments p {
@@ -207,7 +219,7 @@ footer {
 .article_list_light {
    background: #fff;
 }
-.article_list_light h2 {
+.article_list_light h1 {
    color: #283655;
 }
 .article_list_light p {
@@ -222,11 +234,17 @@ footer {
    margin: 1rem 0;
    padding: 1rem;
    background: #fff;
-   border-left: solid 5px #d0e1f9;
+   border-left: solid 10px #d0e1f9;
 }
-
 .comment p {
    color: #1e1f26;
+}
+.comment_author {
+   font-weight: bold;
+}
+
+.comment_child {
+   margin-left: 3rem;
 }
 /* End Article */
 
@@ -259,6 +277,16 @@ footer {
 .clear {
    clear: both;
 }
+
+.list li {
+   padding: 10px;
+}
+.list li:nth-child(even) {
+   background: #eee;
+}
+.list li a {
+   color: #283655;
+}
 /* End Helpers */
 
 /* Colors */
@@ -268,10 +296,11 @@ footer {
 
 .white {
    background: #fff;
+   color: #1e1f26;
 }
 
 .blue {
-   background: #3949ab;
+   background: #283655;
 }
 
 .green {
