@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
 	<meta charset="utf-8">
 	<title>O mnie</title>
@@ -8,6 +9,7 @@
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header>
 		<h1>Tytuł waszej strony</h1>
@@ -17,46 +19,208 @@
 		</a>
 		<nav id="top-menu">
 			<ul>
-				<li><a href="index.html">Strona główna</a></li>
-				<li class="current"><a href="about.html">O mnie</a></li>
-				<li><a href="one-page.html">One Page</a></li>
+				<li>
+					<a href="index.html">Strona główna</a>
+				</li>
+				<li class="current">
+					<a href="about.html">O mnie</a>
+				</li>
+				<li>
+					<a href="one-page.html">One Page</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 
 	<main class="row">
-		<section id="content" class="column">
-			<h2>O mnie</h2>
-			<p>Tu wpisuje cokolwiek. Jak książka to wiedźmin, jak serial to Dolina Krzemowa, jak film to zbyt wiele żeby wymieniać.</p>
-			<p>Lorem ipsum dolor sit amet quam. Nunc tristique sodales. Phasellus a auctor est, dapibus non, lobortis convallis, dui non risus. Sed lobortis dapibus, libero a dolor. Nullam libero nunc, luctus et malesuada augue sit amet tempus dictum faucibus orci ac pede. Cras congue, lacus sed leo et interdum wisi eu lorem. Sed diam vel lectus. Pellentesque laoreet urna et posuere eget.</p>
-			<p>Phasellus facilisis urna mi, id leo sed felis augue odio sagittis urna. Proin in velit adipiscing wisi. Curabitur scelerisque iaculis. Pellentesque mattis id, sapien. Proin imperdiet sed, ullamcorper et, eros. Sed sit amet neque quis augue. Morbi ut nonummy eget, ante. Maecenas nisl at metus. Aenean congue sit amet turpis at sagittis vel, consequat eu, pulvinar nulla ornare pulvinar mollis, purus laoreet risus. Etiam lobortis condimentum nec, scelerisque porttitor risus. Suspendisse adipiscing. Nulla sed massa in enim. In pede. Sed euismod mi. Fusce tristique, urna risus sit amet neque magna orci ipsum.</p>
+		<section id="content">
+			<div class="column grey">
+				<h2>O mnie</h2>
+				<p style="text-align: justify;">
+					Jestem projektantem i programistą aplikacji mobilnych dla systemu iOS, a także rozwiązań webowych. Współtworzyłem m.in. projekt aplikacji wspierającej kontakt opiekuna medycznego z osobą zależną – Kalker, który zakwalifikował się do dofinansowania ze
+					środków Unii Europejskiej. Aktualnie inwestuję wiedzą i technologią w start-up’y tworząc inicjatywę „Napędzamy start-up’y”. Rozwijam także autorski projekt nowoczesnego podejścia do turystyki w formie platformy webowej i aplikacji mobilnej – Citypocket.
+				</p>
+			</div>
+
+			<div class="column">
+				<h2>Umiejętności</h2>
+
+				<p>Bardzo dobra znajomość języka Swift (xCode, UIKit, CocoaPods, Alamofire)</p>
+				<div class="pb_box">
+					<div class="pb_progress blue" style="width: 95%">
+						<span>95%</span>
+					</div>
+				</div>
+
+				<p>Bardzo dobra znajomość systemu kontroli wersji GIT</p>
+				<div class="pb_box">
+					<div class="pb_progress blue" style="width: 100%">
+						<span>100%</span>
+					</div>
+				</div>
+
+				<p>Bardzo dobra znajomość języka PHP</p>
+				<div class="pb_box">
+					<div class="pb_progress red" style="width: 80%">
+						<span>80%</span>
+					</div>
+				</div>
+
+				<p>Dobra znajomość frameworka Laravel (PHP)</p>
+				<div class="pb_box">
+					<div class="pb_progress red" style="width: 65%">
+						<span>65%</span>
+					</div>
+				</div>
+
+				<p>Bardzo dobra znajomość silnika Unity</p>
+				<div class="pb_box">
+					<div class="pb_progress green" style="width: 90%">
+						<span>90%</span>
+					</div>
+				</div>
+
+				<p>Dobra znajomość języka C#</p>
+				<div class="pb_box">
+					<div class="pb_progress green" style="width: 70%">
+						<span>70%</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="column grey">
+				<h2>Doświadczenie</h2>
+				<div style="display:flex; flex-direction:column;">
+					<div class="list_with_icon">
+						<div class="list_icon">
+							<div class="circle_icon round blue">
+								<i class="fas fa-laptop"></i>
+							</div>
+						</div>
+						<div class="list_text">
+							<p>
+								<strong>Technik Informatyk</strong>
+							</p>
+							<p>Zespół Szkół Elektronicznych i Gimnazjum nr.3 w Jeleniej Górze<br> 2011 – 2015</p>
+						</div>
+					</div>
+
+					<div class="list_with_icon">
+						<div class="list_icon">
+							<div class="circle_icon round blue">
+								<i class="fas fa-briefcase"></i>
+							</div>
+						</div>
+						<div class="list_text">
+							<p>
+								<strong>Studio Deweloperskie Starlab</strong>
+							</p>
+							<p>Założyciel, główny programista i projektant<br> 2016 – obecnie</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<h2>Portfolio</h2>
+				<div style="display:flex; flex-direction:column;">
+					<div class="list_with_icon">
+						<div class="list_icon">
+							<div class="circle_icon round light-blue">
+								<i class="fas fa-mobile-alt" style="color: #1e1f26;"></i>
+							</div>
+						</div>
+						<div class="list_text">
+							<p>
+								<strong>Citypocket - miasto w kieszeni</strong>
+							</p>
+							<p>
+								Aplikacja dostępna na smartfony pozwala na znalezienie każdej interesującej nas firmy, atrakcji, wydarzenia etc. w danym mieście za pomocą dwóch dotknięć ekranu. Citypocket to też dwa sposoby korzystania. Korzystaj żeby coś znaleźć – korzystaj, aby znaleźli
+								Ciebie.
+							</p>
+						</div>
+					</div>
+
+					<div class="list_with_icon">
+						<div class="list_icon">
+							<div class="circle_icon round light-blue">
+								<i class="fas fa-mobile-alt" style="color: #1e1f26;"></i>
+							</div>
+						</div>
+						<div class="list_text">
+							<p>
+								<strong>Kalker - pomoc dla osób zależnych</strong>
+							</p>
+							<p>
+								Projekt jest skierowany do osób niepełnosprawnych (głównie osoby starsze) i osób z ich otoczenia. Polega na ułatwieniu ich porozumiewania się w zakresie podstawowych potrzeb za pomocą aplikacji mobilnej, dostępnej na tablecie lub smartfonie. Osoba zależna
+								w programie posiada infografiki przedstawiające charakterystyczne dla osoby zależnej potrzeby (głodny, spragniony, chcę skorzystać z toalety, boję się, itd.) wraz z tytułami oraz zawsze ikonę telefonu, która po naciśnięciu łączy z ustalonym numerem,
+								jak również ikonę telefonu bezpośrednio na pogotowie ratunkowe. Dzięki takiemu rozwiązaniu osoba zależna jest przygotowana na różne wypadki losowe i nie jest w całości uzależniona tylko od jednego opiekuna. Po kliknięciu danego przycisku wysyła
+								informację do opiekuna, w formie powiadomienia wyświetlanego na urządzeniu, dzięki czemu opiekun nie musi mieć aktualnie włączonej aplikacji. Opiekun po otrzymaniu powiadomienia od osoby zależnej odsyła wiadomość zwrotną z informacją, o przybyciu
+								w danym czasie.
+							</p>
+						</div>
+					</div>
+
+					<div class="list_with_icon">
+						<div class="list_icon">
+							<div class="circle_icon round light-blue">
+								<i class="fas fa-gamepad" style="color: #1e1f26;"></i>
+							</div>
+						</div>
+						<div class="list_text">
+							<p>
+								<strong>Cars - zręcznościowa gra mobilna</strong>
+							</p>
+							<p>
+								Cars – To doskonała, prosta i wciągająca gra na każdą chwilę. Idealna na krótkie przerwy w pracy czy w szkole jak również na dłuższy czas. Do pełnego korzystania z gry potrzebujesz tylko jednej ręki – w drugiej ręce możesz trzymać kawę. Każdy gracz znajdzie
+								tutaj coś dla siebie. Rozmaite trasy oraz pojazdy spełnią oczekiwania wszystkich. Zbieraj punkty, odblokuj nowe trasy i auta. To naprawdę wciąga. Do zobaczenia w grze.
+							</p>
+						</div>
+					</div>
+
+					<div class="list_with_icon">
+						<div class="list_icon">
+							<div class="circle_icon round light-blue">
+								<i class="fas fa-gamepad" style="color: #1e1f26;"></i>
+							</div>
+						</div>
+						<div class="list_text">
+							<p>
+								<strong>Shapu Tapu - zręcznościowa gra mobilna</strong>
+							</p>
+							<p>
+								Shapu Tapu – daj się wciągnąć w dżunglę pełną kształtów i kolorów! Ta niezwykle prosta, lecz emocjonująca zarazem gra pozwoli Ci odpowiedzieć na pytanie – czy rzeczywiście jesteś taki spostrzegawczy, jak myślałeś, że jesteś? Odnajduj kształty w odpowiednich
+								kolorach, zbieraj punkty, trzymaj dobrą passę i myśl szybko, bo czas jest Twoim największym nieprzyjacielem. Porównuj swoje wyniki z przyjaciółmi i ludźmi z całego świata. Bądź czujny i nie daj się zwieść!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column grey">
+				<p style="text-align: justify;">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Ustawą z dn. 29.08.97 roku o Ochronie Danych Osobowych Dz. Ust. nr 133 poz.883.</p>
+			</div>
 		</section>
 
 		<aside>
+			<img src="img/avatar.jpg" alt="avatar" width="200" class="aligncenter round" style="border: solid 5px #283655;">
+
 			<section class="block">
-				<h2 class="red">Polecane seriale</h2>
-				<ol class="list">
-					<li>Dolina Krzemowa</li>
-					<li>Stranger Things</li>
-					<li>Gra o Tron</li>
-					<li>House of Cards</li>
-				</ol>
-			</section>
-			<section class="block">
-				<h2 class="green">Polecane gry</h2>
-				<ol class="list">
-					<li>Far Cry 5</li>
-					<li>Counter-Strike: GO</li>
-					<li>Fortnite</li>
-					<li>What Remains of Edith Finch</li>
-				</ol>
-			</section>
-			<section class="block">
-				<h2 class="blue">Polecane książki</h2>
-				<ol class="list">
-					<li>Saga Wiedźmin</li>
-					<li>Seria Harry Potter</li>
-				</ol>
+				<h2 class="blue">Łukasz Żukowski</h2>
+				<ul class="list list_none">
+					<li>
+						<i class="fas fa-envelope"></i>
+						<span style="float: right;">contact@starlabgames.com</span>
+					</li>
+					<li>
+						<i class="fas fa-phone"></i>
+						<span style="float: right;">+48 999 888 777</span>
+					</li>
+					<li>
+						<i class="fab fa-linkedin"></i>
+						<span style="float: right;"><a target="_blank" class="title-link-dark" href="https://www.linkedin.com/in/lukasz-zukowski/">in/lukasz-zukowski</a></span>
+					</li>
+				</ul>
 			</section>
 		</aside>
 	</main>
@@ -65,4 +229,5 @@
 		copyright &copy; 2018
 	</footer>
 </body>
+
 </html>
